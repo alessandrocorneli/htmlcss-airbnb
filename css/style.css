@@ -1,13 +1,41 @@
-.dublin{
-  position: relative;
-  width: 100%;
-  height: 100%;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.testo{
-  text-align: center;
+#container{
+  width: 400px;
+  margin: auto;
+}
+
+.box{
+  position: relative;
+  width: 350px;
+  height: 200px;
+  margin: 5px;
+  background-size: cover;
+  background-position: center;
+}
+
+#dublino{
+  background-image: url(https://cdn.viaggiamondo.net/wp-content/uploads/sites/13/dublino-1.jpg);
+}
+h2{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%; -50%);
+  transform: translate(-50%, -50%);
+color: #FFFFFF;
+}
+
+.overlay{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.box:hover .overlay{
+  background-color: rgba(0, 0, 0, 0.0);
 }
